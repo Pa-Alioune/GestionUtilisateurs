@@ -1,0 +1,251 @@
+/* Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0d47a1;
+}
+
+#entete, #menu, #pied, #corps {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#entete, #menu, #pied, #menu li a {
+    color: white;
+    text-align: center;
+}
+
+#entete {
+    height: 80px;
+    padding: 20px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    background-color: #0d47a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu {
+    height: 50px;
+    background-color: #1565c0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menu li {
+    padding: 0 20px;
+}
+
+#menu li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 15px 20px;
+    transition: background-color 0.3s;
+}
+
+#menu li a:hover {
+    background-color: #0d47a1;
+    border-radius: 5px;
+}
+
+#corps {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#pied {
+    height: 50px;
+    padding: 10px;
+    background-color: #0d47a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1em;
+}
+
+#titre-principal {
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin-bottom: 20px;
+    color: #0d47a1;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #1976d2;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f1f1f1;
+}
+
+tr:nth-child(even) td {
+    background-color: #e3f2fd;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.formItem {
+    margin-bottom: 15px;
+}
+
+.formItem label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.2em;
+    color: #0d47a1;
+}
+
+.formItem input[type="text"], .formItem input[type="password"], .formItem input[type="email"], .formItem textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.formItem input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #1976d2;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formItem input[type="submit"]:hover {
+    background: #0d47a1;
+}
+
+.messageBox {
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.messageBox.succes {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.messageBox.erreur {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+#statusMessage {
+    border-radius: 5px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.succes {
+    color: green;
+    text-align: center;
+}
+
+.erreur {
+    color: red;
+}
+
+.formItem input {
+    height: 25px;
+    border-color: grey;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.formItem span {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+#auth {
+    text-align: center;
+    margin: auto;
+}
+
+table tr td a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1976d2;
+    transition: color 0.3s;
+}
+
+table tr td a:hover {
+    color: #0d47a1;
+}
